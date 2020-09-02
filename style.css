@@ -24,11 +24,12 @@ p {
 
 /* Mobile Responsive */
 
-@media(max-width: 768px) {
-  .box .mainMenu {
+@media screen and (max-width: 768px) {
+
+  #navbar .mainMenu {
     display: none;
   }
-  .mainMenu.toggleCls{
+  #navbar .mainMenu.toggleCls{
     display: block;
   }
   }
@@ -318,4 +319,18 @@ border: 1px #ddd solid;
 
 #contact-form textarea {
   height: 200px;
+}
+
+/* Hamburger menu */
+.hamIcon {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.hamIcon:focus {
+  outline: none;
 }
